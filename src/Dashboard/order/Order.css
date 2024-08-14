@@ -1,0 +1,32 @@
+/* Orders.css */
+.orders-container {
+  display: flex;
+  width: 60vw;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.order-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.order-info {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.order-info div {
+  flex: 1;
+  text-align: center;
+  padding: 5px;
+}

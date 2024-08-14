@@ -1,0 +1,1197 @@
+/* for Top_banner.js */
+
+.top-banner-img{
+  width: 100%;
+  height: 48vw;
+  background-image: url('../../images/homepage-wall-background.png');
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* border: 2px solid red; */
+}
+
+.top-banner-data{
+  width: 40%;
+  height: 60%;
+  background-color: #FFF3E3;
+
+  margin-left: 40vw;
+  margin-top: 11vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* border: 2px solid blue; */
+}
+
+.top-inner-banner-data{
+  width: 86%;
+  height: 77%;
+ 
+  margin-top: 5%;
+
+  /* border: 2px solid green; */
+
+}
+
+.top-banner-newarv{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 3px;
+  line-height: 24px;
+}
+
+.top-banner-newcoll{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 52px;
+  color: #B88E2F;
+  line-height: 65px;
+  
+}
+
+.top-banner-newdata{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #333333;
+  
+}
+
+.top-banner-buynow{
+  width: 49%;
+  height: 23%;
+  background-color: #B88E2F;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  border: none;
+
+}
+
+
+
+
+
+
+
+
+
+/* Responsive CSS for screen sizes 800px to 1300px */
+@media screen and (max-width: 1300px) and (min-width: 800px) {
+  .top-banner-img {
+    height: auto;
+    padding: 30px;
+  }
+
+  .top-banner-data {
+    width: 50%;
+    margin-left: 0;
+    margin-top: 7vh;
+  }
+
+  .top-inner-banner-data {
+    width: 90%;
+    height: auto;
+    margin-top: 4%;
+  }
+
+  .top-banner-newarv {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .top-banner-newcoll {
+    font-size: 44px;
+    line-height: 55px;
+  }
+
+  .top-banner-newdata {
+    font-size: 17px;
+  }
+
+  .top-banner-buynow {
+    width: 55%;
+    height: auto;
+    padding: 12px;
+  }
+}
+/* Responsive CSS for screen sizes 500px to 800px */
+@media screen and (max-width: 800px) and (min-width: 500px) {
+  .top-banner-img {
+    height: auto;
+    padding: 20px;
+  }
+
+  .top-banner-data {
+    width: 70%;
+    margin-left: 0;
+    margin-top: 5vh;
+  }
+
+  .top-inner-banner-data {
+    width: 90%;
+    height: auto;
+    margin-top: 3%;
+  }
+
+  .top-banner-newarv {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .top-banner-newcoll {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .top-banner-newdata {
+    font-size: 16px;
+  }
+
+  .top-banner-buynow {
+    width: 60%;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+/* Responsive CSS for screen sizes 200px to 500px */
+@media screen and (max-width: 500px) {
+  .top-banner-img {
+    height: auto;
+    padding: 10px;
+  }
+
+  .top-banner-data {
+    width: 90%;
+    margin-left: 0;
+    margin-top: 3vh;
+  }
+
+  .top-inner-banner-data {
+    width: 95%;
+    height: auto;
+    margin-top: 2%;
+  }
+
+  .top-banner-newarv {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .top-banner-newcoll {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .top-banner-newdata {
+    font-size: 14px;
+  }
+
+  .top-banner-buynow {
+    width: 70%;
+    height: auto;
+    padding: 8px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for Second_banner.js */
+
+.second-heading-main{
+
+  margin-top: 25px;
+
+
+width: 100%;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+/* flex-wrap: wrap; */
+
+/* border: 2px solid rebeccapurple; */
+}
+
+.second-heading-top{
+  width: 85%;
+  height: 90%;
+
+  /* border: 2px solid gold; */
+}
+
+.second-heading{
+ width: 100%;
+ height: 15%;
+
+  /* border: 2px solid rgb(224, 17, 155); */
+}
+
+.second-headline{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #333333;
+  text-align: center;
+}
+
+.second-head-data{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #666666;
+  text-align: center;
+}
+
+.second-head-multicard{
+ height: 85%;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ /* margin-left: 7%; */
+
+  /* border: 2px solid rgb(9, 219, 55); */
+}
+
+.second-head-card{
+  height: 90%;
+  width: 33%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  /* border: 2px solid black; */
+ }
+
+ .second-bottom-img{
+  height: 90%;
+  width: 90%;
+  border-radius: 10px;
+
+  /* border: 2px solid red; */
+ }
+
+ #head-card-1{
+  background-image: url('../../images/Mask\ Group.png');
+ }
+
+ #head-card-2{
+  background-image: url('../../images/Image-living\ room.png');
+ }
+
+ #head-card-3{
+  background-image: url('../../images/Mask\ Group\ \(1\).png');
+ }
+
+
+ .second-bottom-data{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+  text-align: center;
+  margin-top: 20px;
+ }
+
+
+
+
+
+
+ /* Responsive CSS for screen sizes 800px to 1300px */
+@media screen and (max-width: 1300px) and (min-width: 800px) {
+  .second-heading-main {
+    height: auto;
+    padding: 30px;
+  }
+
+  .second-heading-top {
+    width: 80%;
+    height: auto;
+  }
+
+  .second-heading {
+    height: auto;
+  }
+
+  .second-headline {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .second-head-data {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .second-head-multicard {
+    height: auto;
+  }
+
+  .second-head-card {
+    width: 30%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .second-bottom-img {
+    height: 200px;
+    width: 100%;
+  }
+
+  .second-bottom-data {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+/* Responsive CSS for screen sizes 500px to 800px */
+@media screen and (max-width: 800px) and (min-width: 500px) {
+  .second-heading-main {
+    height: auto;
+    padding: 20px;
+  }
+
+  .second-heading-top {
+    width: 85%;
+    height: auto;
+  }
+
+  .second-heading {
+    height: auto;
+  }
+
+  .second-headline {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .second-head-data {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .second-head-multicard {
+    height: auto;
+  }
+
+  .second-head-card {
+    width: 45%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .second-bottom-img {
+    height: 150px;
+    width: 100%;
+  }
+
+  .second-bottom-data {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+/* Responsive CSS for screen sizes 200px to 500px */
+@media screen and (max-width: 500px) {
+  .second-heading-main {
+    height: auto;
+    padding: 10px;
+  }
+
+  .second-heading-top {
+    width: 90%;
+    height: auto;
+  }
+
+  .second-heading {
+    height: auto;
+  }
+
+  .second-headline {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .second-head-data {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .second-head-multicard {
+    height: auto;
+  }
+
+  .second-head-card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .second-bottom-img {
+    height: 120px;
+    width: 100%;
+  }
+
+  .second-bottom-data {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* for OurProducts.js */
+
+ .ourproduct-top{
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+ .ourproduct-main{
+  width: 85%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  /* border: 2px solid red; */
+
+ }
+
+ .ourproduct-heading{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #3A3A3A;
+  text-align: center;
+ }
+
+
+ .ourproduct-multiplecards{
+  /* height: 40rem;
+  width: 40rem; */
+
+  /* height: 65vh; */
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+ }
+
+ .ourproduct-card{
+  width: 23%;
+  height: 60vh;
+  
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  flex-direction: column;
+
+  /* position: relative; */
+
+  /* border: 2px solid green; */
+
+ }
+
+ .ourproduct-card-img{
+    height: 67%;
+    width: 100%;
+
+    
+    /* position: relative; */
+    overflow: hidden;
+
+    
+    background-repeat: no-repeat;
+    background-size: cover; /* This ensures the image covers the entire div */
+    background-position: center; /* This centers the image */
+/* 
+    display: flex;
+    justify-content: end; */
+
+   /* position: relative;  */ /* Ensure the inner div is positioned relative to this parent */
+
+    /* border: 2px solid blue; */
+ }
+
+ 
+ .ourproduct-card-img-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  /* z-index: 0; */
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center; 
+
+  /* border: 2px solid green; */
+
+}
+
+.ourproduct-card-discount{
+  width: 48px;
+  height: 48px;
+
+  position: absolute;
+
+  margin: 25px;
+  border-radius: 50%;
+  border: none;
+  background-color: #E97171;
+
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+
+  
+  position: absolute;
+
+  z-index: 10;
+
+ /* position: absolute;  */ /*Position the child div absolutely within the parent*/
+  /*  top: 0;
+    left: 0; */
+
+  /* border: 2px solid purple; */
+}
+
+
+.ourproduct-card-new{
+  width: 48px;
+  height: 48px;
+
+  margin: 25px;
+  border-radius: 50%;
+  border: none;
+  background-color: #2EC1AC;
+
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+
+ /* position: absolute;  */ /*Position the child div absolutely within the parent*/
+  /*  top: 0;
+    left: 0; */
+
+  /* border: 2px solid purple; */
+}
+
+.ourproduct-card-discount-tag{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.ourproduct-aboutcard{
+  height: 33%;
+  display: flex;
+  flex-direction: column;
+  
+
+  background-color: #F4F5F7;
+
+  /* border: 2px solid red; */
+}
+
+.ourproduct-about-title{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.ourproduct-about-name{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: #3A3A3A;
+  
+  margin-top: 15px;
+
+
+  /* border: 2px solid red; */
+}
+
+.ourproduct-about-desc{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #898989;
+  
+
+  margin-top: -3px;
+  /* border: 2px solid blue; */
+}
+
+.ourproduct-about-price{
+  display: flex;
+  /* gap: 15px; */
+
+  /* gap: 25px; */
+
+  /* margin-left: 10px; */
+}
+
+.ourproduct-aboutcard-newrs{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #3A3A3A;
+
+  margin-left: 25px;
+  
+}
+ .ourproduct-aboutcard-oldrs{
+  text-decoration: line-through;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #B0B0B0;
+
+
+  margin-left: 5px;
+ }
+
+ .ourproduct-btn-showmore{
+  height: 48px;
+  width: 20%;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #B88E2F;
+
+  margin-top: 32px;
+
+  border: 1px solid #B88E2F;
+  background-color: #FFFFFF;
+ }
+
+
+ 
+ .ourproduct-btn-more{
+  height: 100%;
+  width: 100%;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #B88E2F;
+
+  /* margin-top: 32px; */
+
+  border: 1px solid #B88E2F;
+  background-color: #FFFFFF;
+ }
+
+
+
+
+
+
+
+
+/* Responsive CSS for screen sizes 800px to 1300px */
+@media screen and (max-width: 1300px) and (min-width: 800px) {
+  .ourproduct-main {
+    width: 80%;
+  }
+
+  .ourproduct-multiplecards {
+    gap: 24px;
+  }
+
+  .ourproduct-card {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .ourproduct-card-img {
+    height: 60%;
+  }
+
+  .ourproduct-heading {
+    font-size: 36px;
+  }
+
+  .ourproduct-btn-showmore {
+    width: 20%;
+  }
+}
+
+/* Responsive CSS for screen sizes 500px to 800px */
+@media screen and (max-width: 800px) and (min-width: 500px) {
+  .ourproduct-main {
+    width: 90%;
+  }
+
+  .ourproduct-multiplecards {
+    gap: 16px;
+  }
+
+  .ourproduct-card {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .ourproduct-card-img {
+    height: 50%;
+  }
+
+  .ourproduct-heading {
+    font-size: 32px;
+  }
+
+  .ourproduct-btn-showmore {
+    width: 25%;
+  }
+}
+
+/* Responsive CSS for screen sizes below 500px */
+@media screen and (max-width: 500px) {
+  .ourproduct-main {
+    width: 95%;
+  }
+
+  .ourproduct-multiplecards {
+    gap: 8px;
+  }
+
+  .ourproduct-card {
+    width: 100%;
+  }
+
+  .ourproduct-card-img {
+    height: 40%;
+  }
+
+  .ourproduct-heading {
+    font-size: 28px;
+  }
+
+  .ourproduct-btn-showmore {
+    width: 30%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* for Share_Your_Setup.js*/
+
+ .setup-container{
+
+  /* margin-bottom: 25px; */
+
+
+  width: 100%;
+  height: 125vh;
+
+  display: flex;
+  justify-content: center;
+
+  background-image: url('../../images/footer\ img2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; /* This ensures the image covers the entire div */
+  background-position: center; /* This centers the image */
+
+  /* border: 2px solid red; */
+ }
+
+ .setup-main{
+  display: flex;
+  flex-direction: column;
+
+ }
+
+ .setup-title{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #616161;
+  text-align: center;
+ }
+
+ .setup-hashtag{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #3A3A3A;
+  text-align: center;
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* carousal */
+
+.custom-carousel {
+  width: 65%;
+  
+  /* overflow: hidden; */
+}
+
+.custom-carousel .carousel-image {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: flex-start;
+}
+
+.custom-carousel .carousel-image img {
+  height: 100%;
+  width: 45%; /* Each image will take 45% of the container width */
+  object-fit: cover;
+  margin-right: 10px; /* Adds a small gap between images */
+}
+
+.custom-carousel .carousel-inner {
+  width: calc(200% + 50%); /* To show two full images and 25% of the third */
+}
+
+.custom-carousel .carousel-item {
+  display: flex;
+  justify-content: flex-start;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+ /* for ExploreMore.js */
+
+ .explore-main{
+
+  margin-top: 60px;
+  margin-bottom: 50px;
+
+
+  width: 100%;
+  height: 85vh;
+  background-color: #FCF8F3;
+
+  display: flex;
+  align-items: center;
+
+ }
+
+ .explore-title{
+  width: 35%;
+  height: 60%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* border: 2px solid orange; */
+ }
+
+ .explore-title-text{
+  width: 75%;
+  
+ }
+
+ .explore-title-headline{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #3A3A3A;
+  /* text-align: center; */
+ }
+
+ .explore-title-desc{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #616161;
+ }
+
+
+ .explore-title-btn{
+  width: 75%;
+
+
+  /* border: 2px solid red; */
+ }
+
+ .explore-btn{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #B88E2F;
+  color:#FFFFFF;
+
+  border: none;
+
+  height: 48px;
+  width: 176px;
+ }
+
+
+
+ .explore-img{
+  width: 65%;
+  height: 86%;
+
+  background-image: url('../../images/Products.png');
+  background-repeat: no-repeat;
+  background-size: cover; /* This ensures the image covers the entire div */
+  background-position: center; /* This centers the image */
+
+  /* border: 2px solid red; */
+ }
+
+
+ /* Responsive CSS for screen sizes 800px to 1300px */
+@media screen and (max-width: 1300px) and (min-width: 800px) {
+  .explore-main {
+    height: 70vh; /* Adjusted height for responsiveness */
+  }
+
+  .explore-title {
+    width: 40%; /* Adjusted width */
+  }
+
+  .explore-img {
+    width: 60%; /* Adjusted width */
+    height: 80%; /* Adjusted height */
+  }
+}
+
+/* Responsive CSS for screen sizes 500px to 800px */
+@media screen and (max-width: 800px) and (min-width: 500px) {
+  .explore-main {
+    height: 60vh; /* Adjusted height for responsiveness */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .explore-title {
+    width: 80%; /* Adjusted width */
+    height: auto; /* Auto height */
+    margin-bottom: 20px; /* Adjusted margin */
+    text-align: center; /* Center align text */
+  }
+
+  .explore-img {
+    width: 90%; /* Adjusted width */
+    height: 50vh; /* Adjusted height */
+  }
+}
+
+/* Responsive CSS for screen sizes below 500px */
+@media screen and (max-width: 500px) {
+  .explore-main {
+    height: auto; /* Auto height */
+    padding: 20px; /* Adjusted padding */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .explore-title {
+    width: 90%; /* Adjusted width */
+    margin-bottom: 20px; /* Adjusted margin */
+    text-align: center; /* Center align text */
+  }
+
+  .explore-img {
+    width: 90%; /* Adjusted width */
+    height: 40vh; /* Adjusted height */
+  }
+}
+
+.explore-main {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  width: 100%;
+  background-color: #FCF8F3;
+  display: flex;
+  align-items: center;
+}
+
+.explore-title {
+  width: 35%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.explore-title-text {
+  width: 75%;
+}
+
+.explore-title-headline {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #3A3A3A;
+}
+
+.explore-title-desc {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #616161;
+}
+
+.explore-title-btn {
+  width: 75%;
+}
+
+.explore-btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #B88E2F;
+  color: #FFFFFF;
+  border: none;
+  height: 48px;
+  width: 176px;
+}
+
+.explore-img {
+  width: 65%;
+  height: 86%;
+  background-image: url('../../images/Products.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
