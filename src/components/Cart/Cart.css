@@ -17,7 +17,7 @@
 .cart-Product{
     /* border: 2px solid rgb(78, 2, 255); */
     width: 70%;
-    height: 60%;
+    min-height: 60%;
     display: flex;
     flex-direction: column;
    
@@ -54,9 +54,11 @@
     display: flex;
     flex-direction: row;
 
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
    
    align-items:end ;
+   margin-top: 5px;
 
 }
 .image-designing{

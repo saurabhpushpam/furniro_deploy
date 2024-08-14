@@ -10,7 +10,7 @@ const GetUser = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/getalluserdata');
+        const response = await axios.get('https://furniro-backend-4vg0.onrender.com/api/getalluserdata');
         setUsers(response.data.data);
         setLoading(false);
       } catch (err) {

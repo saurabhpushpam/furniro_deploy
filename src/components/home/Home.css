@@ -657,8 +657,12 @@ justify-content: center;
 
 .ourproduct-about-title{
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   
+  /* margin-left: -10px; */
+
+  /* border: 2px solid blue; */
+
 }
 
 .ourproduct-about-name{

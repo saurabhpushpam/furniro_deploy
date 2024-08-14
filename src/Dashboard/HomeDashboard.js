@@ -20,7 +20,7 @@ function HomeDashboard() {
 
   const fetchuser = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/getalluserdata');
+      const response = await axios.get('https://furniro-backend-4vg0.onrender.com/api/getalluserdata');
       setuser(response.data.data.length);
       setLoading(false);
     } catch (err) {
@@ -32,7 +32,7 @@ function HomeDashboard() {
 
   const fetchproduct = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/getallproductvarient');
+      const response = await axios.get('https://furniro-backend-4vg0.onrender.com/api/getallproductvarient');
       setproduct(response.data.data.length);
       setLoading(false);
     } catch (err) {
@@ -44,7 +44,7 @@ function HomeDashboard() {
 
   const fetchcategory = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/getallcategory');
+      const response = await axios.get('https://furniro-backend-4vg0.onrender.com/api/getallcategory');
       setcategory(response.data.data.length);
       setLoading(false);
     } catch (err) {
@@ -55,7 +55,7 @@ function HomeDashboard() {
 
   const fetchOrders = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/getallneworder');
+      const response = await axios.get('https://furniro-backend-4vg0.onrender.com/api/getallneworder');
       setOrders(response.data.data.length);
       setLoading(false);
     } catch (err) {

@@ -13,7 +13,7 @@ const GetProduct = () => {
   useEffect(() => {
     const fetchproducts = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/getallproduct');
+        const response = await axios.get('https://furniro-backend-4vg0.onrender.com/api/getallproduct');
         setproducts(response.data.data);
         setLoading(false);
       } catch (err) {
@@ -30,7 +30,7 @@ const GetProduct = () => {
   const handleDelete = async (id) => {
     try {
       console.log(id);
-      await axios.delete(`http://localhost:5000/api/deleteoneproduct/${id}`);
+      await axios.delete(`https://furniro-backend-4vg0.onrender.com/api/deleteoneproduct/${id}`);
 
       window.location.reload();
 

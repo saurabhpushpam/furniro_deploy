@@ -77,7 +77,7 @@ function App() {
       formData.append('password', signupData.password);
       formData.append('profileimage', signupData.profileImage); // Append the profile image file
 
-      const response = await fetch('http://localhost:5000/api/register', {
+      const response = await fetch('https://furniro-backend-4vg0.onrender.com/api/register', {
         method: 'POST',
         body: formData,
       });
@@ -105,7 +105,7 @@ function App() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/login', {
+      const response = await fetch('https://furniro-backend-4vg0.onrender.com/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -22,7 +22,7 @@ export default function Contact() {
       return;
     }
     try {
-      const response = await axios.post('http://localhost:5000/api/addcontact', {
+      const response = await axios.post('https://furniro-backend-4vg0.onrender.com/api/addcontact', {
         name,
         email,
         subject

@@ -237,7 +237,7 @@ const Cart = () => {
     const fetchCartItems = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:5000/api/getactivecartitems', {
+        const response = await axios.get('https://furniro-backend-4vg0.onrender.com/api/getactivecartitems', {
           headers: {
             Authorization: `${token}`
           }
@@ -287,7 +287,7 @@ const Cart = () => {
     try {
       console.log(cartItemId);
       // const token = localStorage.getItem('token');
-      await axios.post(`http://localhost:5000/api/deletecartitem/${cartItemId}`, {}, {
+      await axios.post(`https://furniro-backend-4vg0.onrender.com/api/deletecartitem/${cartItemId}`, {}, {
         // headers: {
         //   Authorization: `${token}`
         // }
@@ -330,7 +330,7 @@ const Cart = () => {
               {cartItems.map((item) => (
                 <div key={item._id} className='cart-product-details'>
                   <div className='image-designing'>
-                    <img src={`http://localhost:5000/api/getproductvarientimage/${item.productvarientid.image[0]}`} alt={item.productvarientid.productid.productname} />
+                    <img src={`https://furniro-backend-4vg0.onrender.com/api/getproductvarientimage/${item.productvarientid.image[0]}`} alt={item.productvarientid.productid.productname} />
                   </div>
                   <span className='cart-text'>{item.productvarientid.productid.productname}</span>
                   <span className='cart-text-1'>Rs. {item.productvarientid.price}</span>

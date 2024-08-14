@@ -13,7 +13,7 @@ const GetContact = () => {
   useEffect(() => {
     const fetchcontact = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/getallcontact');
+        const response = await axios.get('https://furniro-backend-4vg0.onrender.com/api/getallcontact');
         setcontact(response.data.data);
         setLoading(false);
       } catch (err) {

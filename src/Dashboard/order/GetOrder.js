@@ -11,7 +11,7 @@ const Orders = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/getallneworder');
+        const response = await axios.get('https://furniro-backend-4vg0.onrender.com/api/getallneworder');
         setOrders(response.data.data);
 
         setLoading(false);

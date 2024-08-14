@@ -171,7 +171,7 @@ const AddProductVarient = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/getallproduct');
+        const response = await axios.get('https://furniro-backend-4vg0.onrender.com/api/getallproduct');
         setProducts(response.data.data); // Assuming response.data is an array of products
       } catch (err) {
         console.error('Error fetching products:', err);
@@ -252,7 +252,7 @@ const AddProductVarient = () => {
 
 
     try {
-      const response = await axios.post('http://localhost:5000/api/addproductvarient', productData, {
+      const response = await axios.post('https://furniro-backend-4vg0.onrender.com/api/addproductvarient', productData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }

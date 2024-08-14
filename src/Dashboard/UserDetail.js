@@ -30,7 +30,7 @@ const UserDetail = () => {
         }
 
         // Fetch user data using the token
-        const response = await axios.get('http://localhost:5000/api/getuserdatabytoken', {
+        const response = await axios.get('https://furniro-backend-4vg0.onrender.com/api/getuserdatabytoken', {
           headers: { Authorization: `${token}` }
         });
 
@@ -44,7 +44,7 @@ const UserDetail = () => {
         // const imageResponse = await axios.get(`http://localhost:5000/api/profileimg/${userId}`);
         // setProfileImage(imageResponse.data.imageUrl);
 
-        setProfileImage(`http://localhost:5000/api/profileimg/${userId}`);
+        setProfileImage(`https://furniro-backend-4vg0.onrender.com/api/profileimg/${userId}`);
 
       } catch (error) {
         console.error('Error fetching user data:', error);

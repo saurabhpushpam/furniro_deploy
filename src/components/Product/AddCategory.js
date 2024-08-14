@@ -10,7 +10,7 @@ const AddCategory = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     // API call to add a new category
-    axios.post('http://localhost:5000/api/addcategory', {
+    axios.post('https://furniro-backend-4vg0.onrender.com/api/addcategory', {
       categoryname,
       description,
     })

@@ -13,7 +13,7 @@ const GetCategory = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/getallcategory');
+        const response = await axios.get('https://furniro-backend-4vg0.onrender.com/api/getallcategory');
         setCategories(response.data.data);
         setLoading(false);
       } catch (err) {
@@ -31,7 +31,7 @@ const GetCategory = () => {
   const handleDelete = async (id) => {
     try {
       console.log(id);
-      await axios.post(`http://localhost:5000/api/deleteonecategory/${id}`);
+      await axios.post(`https://furniro-backend-4vg0.onrender.com/api/deleteonecategory/${id}`);
 
       // Update state to remove category
       // setCategories(categories.filter(category => category.id !== id)); 

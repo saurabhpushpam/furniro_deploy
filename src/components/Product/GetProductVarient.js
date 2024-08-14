@@ -16,7 +16,7 @@ const GetProductVarient = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/getallproductvarient');
+        const response = await axios.get('https://furniro-backend-4vg0.onrender.com/api/getallproductvarient');
         setProducts(response.data.data);
         // setimagename(response.data.data.image);
         setLoading(false);
@@ -37,7 +37,7 @@ const GetProductVarient = () => {
   const handleDelete = async (id) => {
     try {
       console.log(id);
-      await axios.delete(`http://localhost:5000/api/deleteoneproductvarient/${id}`);
+      await axios.delete(`https://furniro-backend-4vg0.onrender.com/api/deleteoneproductvarient/${id}`);
 
       window.location.reload();
 
@@ -59,12 +59,12 @@ const GetProductVarient = () => {
             <button onClick={() => handleDelete(product._id)} style={{ border: "none", height: "20%", backgroundColor: "white", color: "red" }}><AiFillDelete /></button>
             {/* <img src={image} alt={product.productid.productname} className="product-image" /> */}
             <img
-              src={`http://localhost:5000/api/getproductvarientimage/${product.image[0]}`} // Use the first image in the array
+              src={`https://furniro-backend-4vg0.onrender.com/api/getproductvarientimage/${product.image[0]}`} // Use the first image in the array
               alt={product.productid.productname}
               className="product-image"
             />
             <div className="product-info">
-              <h3>{product.productid.productName}</h3>
+              <h2> {product.productid.productname}</h2>
               <p><b>Price: </b>${product.price}</p>
               <p><b>Size: </b>{product.size}</p>
               <p><b>Color: </b>{product.color}</p>

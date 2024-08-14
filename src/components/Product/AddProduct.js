@@ -189,7 +189,7 @@ const AddProduct = () => {
   useEffect(() => {
     const fetchCategory = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/getallcategory');
+        const response = await axios.get('https://furniro-backend-4vg0.onrender.com/api/getallcategory');
         setCategory(response.data.data);
       } catch (err) {
         console.error('Error fetching categories:', err);
@@ -239,7 +239,7 @@ const AddProduct = () => {
     // console.log('productdata', productData);
 
     try {
-      await axios.post('http://localhost:5000/api/addproduct', productData, {
+      await axios.post('https://furniro-backend-4vg0.onrender.com/api/addproduct', productData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }

@@ -159,7 +159,7 @@ const Billing = () => {
   useEffect(() => {
     const fetchCartItems = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/getactivecartitems');
+        const response = await fetch('https://furniro-backend-4vg0.onrender.com/api/getactivecartitems');
         const data = await response.json();
 
 
@@ -223,7 +223,7 @@ const Billing = () => {
       const token = localStorage.getItem('token'); // Read token from localStorage
       const response = await axios.post(
         // 'http://localhost:5000/api/addaddress',
-        'http://localhost:5000/api/neworder',
+        'https://furniro-backend-4vg0.onrender.com/api/neworder',
         // billingDetails,
         { ...billingDetails, cartitemid: cartItemIds },
         {
@@ -236,7 +236,7 @@ const Billing = () => {
       console.log('Data submitted successfully:', response.data);
 
       await axios.post(
-        'http://localhost:5000/api/updatestatus',
+        'https://furniro-backend-4vg0.onrender.com/api/updatestatus',
       );
 
       // window.location.reload();

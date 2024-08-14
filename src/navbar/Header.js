@@ -32,7 +32,7 @@ const Header = () => {
         }
 
         // Fetch user data using the token
-        const response = await axios.get('http://localhost:5000/api/getuserdatabytoken', {
+        const response = await axios.get('https://furniro-backend-4vg0.onrender.com/api/getuserdatabytoken', {
           headers: { Authorization: `${token}` }
         });
 

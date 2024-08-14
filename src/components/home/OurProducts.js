@@ -243,7 +243,7 @@ const OurProducts = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/getallproductvarient');
+        const response = await axios.get('https://furniro-backend-4vg0.onrender.com/api/getallproductvarient');
         const productVariants = response.data.data;
 
         const datalength = productVariants.length;
@@ -257,7 +257,7 @@ const OurProducts = () => {
 
         const productsWithImages = productVariants.map(product => ({
           ...product,
-          imageUrl: product.image && product.image[0] ? `http://localhost:5000/api/getproductvarientimage/${product.image[0]}` : '',
+          imageUrl: product.image && product.image[0] ? `https://furniro-backend-4vg0.onrender.com/api/getproductvarientimage/${product.image[0]}` : '',
         }));
 
         console.log(productVariants);
@@ -330,7 +330,7 @@ const OurProducts = () => {
                   </div>
                   <div className='ourproduct-about-price'>
                     <p className='ourproduct-aboutcard-newrs'>Rp {product.price}</p>
-                    <p className='ourproduct-aboutcard-oldrs'>Rp {product.oldprice}</p>
+                    <p className='ourproduct-aboutcard-oldrs'> {product.oldprice}</p>
                   </div>
                 </div>
               </div>

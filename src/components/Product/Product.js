@@ -307,13 +307,13 @@ function Product() {
   useEffect(() => {
     const fetchProductDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/getproductvarientbyproductvarientid/${id}`);
+        const response = await axios.get(`https://furniro-backend-4vg0.onrender.com/api/getproductvarientbyproductvarientid/${id}`);
         // const response = await axios.get(`http://localhost:5000/api/getproductvarientbyproductvarientid/66a20bc498a299422018dfbc`);
         setProductDetails(response.data.data);
 
 
 
-        const relatedProductsResponse = await axios.get('http://localhost:5000/api/getallproductvarient');
+        const relatedProductsResponse = await axios.get('https://furniro-backend-4vg0.onrender.com/api/getallproductvarient');
 
         const productdata = relatedProductsResponse.data.data.slice(0, 4)
         // setRelatedProducts(relatedProductsResponse.data.data.slice(0, 4));
@@ -326,7 +326,7 @@ function Product() {
 
         const productsWithImages = productdata.map(product => ({
           ...product,
-          imageUrl: product.image && product.image[0] ? `http://localhost:5000/api/getproductvarientimage/${product.image[0]}` : '',
+          imageUrl: product.image && product.image[0] ? `https://furniro-backend-4vg0.onrender.com/api/getproductvarientimage/${product.image[0]}` : '',
         }));
 
         setRelatedProducts(productsWithImages)
@@ -354,7 +354,7 @@ function Product() {
   const handleAddToCart = async () => {
     try {
       const token = localStorage.getItem('token'); // Assuming you store the token in localStorage
-      await axios.post('http://localhost:5000/api/addcartitems', {
+      await axios.post('https://furniro-backend-4vg0.onrender.com/api/addcartitems', {
         quantity: count,
         productvarientid: productDetails._id, // Replace with the actual product variant ID
       }, {
@@ -363,6 +363,9 @@ function Product() {
         },
       });
       alert('Product added to cart');
+
+      navigate('/cart');
+
     } catch (error) {
       console.error('Error adding to cart:', error);
     }
@@ -414,17 +417,18 @@ function Product() {
               <img
                 className="side-images-img"
                 key={index}
-                src={`http://localhost:5000/api/getproductvarientimage/${image}`}
+                src={`https://furniro-backend-4vg0.onrender.com/api/getproductvarientimage/${image}`}
                 alt={`side-image-${index}`}
                 onClick={() => handleImageClick(index)}
-                style={{ cursor: 'pointer', backgroundPosition: "center", backgroundSize: "cover" }}
+                style={{ width: "5vw", height: "10vh", borderRadius: "0.5rem" }}
+              // style={{ cursor: 'pointer', backgroundPosition: "center", backgroundSize: "cover" }}
               />
             ))}
           </div>
-          <div className="image-active" style={{ marginLeft: "10px" }}>
+          <div className="image-active" style={{ marginLeft: "25px" }}>
             <img
-              style={{ width: "25vw", height: "70vh" }}
-              src={`http://localhost:5000/api/getproductvarientimage/${productDetails.image[0]}`}
+              style={{ width: "30vw", height: "70vh", borderRadius: "0.5rem" }}
+              src={`https://furniro-backend-4vg0.onrender.com/api/getproductvarientimage/${productDetails.image[0]}`}
               alt="active"
             />
           </div>
@@ -448,9 +452,9 @@ function Product() {
 
         <div className="product-desc">
           {/* <h2>#Product Name</h2> */}
-          <h2>{productDetails.productid.productname}</h2>
+          <h2 style={{ marginLeft: "-30vw" }}>{productDetails.productid.productname}</h2>
           {/* <p style={{ color: '#9F9F9F' }}>#Product Price</p> */}
-          <p style={{ color: '#9F9F9F' }}>Rs.{productDetails.price}</p>
+          <p style={{ color: '#9F9F9F', marginLeft: "-40vw" }}>Rs.{productDetails.price}</p>
           <div
             style={{
               display: "flex",
@@ -574,12 +578,12 @@ function Product() {
               {/* {product.isNew && <div className="bubble new">New</div>} */}
               {/* <img className='img-fluid' src={img1} alt={product.name} /> */}
 
-              <img className='img-fluid' src={`${product.imageUrl}`} alt={product.productid.name} style={{ width: "20vw", height: "30vh" }} />
+              <img className='img-fluid' src={`${product.imageUrl}`} alt={product.productid.name} style={{ width: "20vw", height: "40vh" }} />
               <div className="r-prod-desc">
                 <ul>
                   <li>{product.productid.productname}</li>
-                  <li>Size : <span>{product.size}</span></li>
-                  <li>{product.price} <span>{product.oldprice}</span></li>
+                  <li>Size : {product.size}</li>
+                  <li>Rs{product.price} <span>Rs{product.oldprice}</span></li>
                 </ul>
               </div>
             </div>
